@@ -36,5 +36,11 @@ namespace filterCV.Controllers
             return new JsonResult(new { data = text.ToString() });
         }
 
+        [HttpPost("abc")]
+        public JsonResult testApi(List<IFormFile> formFile)
+        {
+            return new JsonResult(new { data = "ASasjBAJKSHjkashJKHSaskj"});
+        }
+
     }
 }
